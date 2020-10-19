@@ -1,0 +1,14 @@
+@import "../variables.css";
+#header{
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+#header .container-fluid .header-inner{
+   position: relative;
+    display:flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}

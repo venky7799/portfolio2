@@ -1,0 +1,619 @@
+@import "../css/variables.css";
+@import "./components/header.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 900px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background:black;
+  z-index: 2000;
+
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 8000px;
+  position: fixed;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index: 2000;
+
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader{
+  width:100%;
+  height:100vh;
+  background:black;
+  overflow:hidden;
+  position:fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 999;
+}
+
+.p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+.logo{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight:800;
+    overflow: hidden;
+}
+.banner{
+  display: flex;
+  position: relative;
+  height: 90vh;
+
+}
+/*--------------------section-1-------------------------*/
+.circlewitharrow{
+
+border-radius: 100%;
+
+/* Arrow 2 (Stroke) */
+
+
+position: absolute;
+width: 18vw;
+height: 18vw;
+right:55rem;
+top: 194px;
+left: 10rem;
+border: 2px solid #FFFFFF;
+z-index: 3;
+}
+.circlewitharrow:hover {
+  animation: rotate 2.5s infinite linear;
+}
+@keyframes rotate{
+ 100%{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+  
+}
+
+
+.circlewitharrow .arrow1{
+  position: relative;
+  width: 6vw;
+  height: 1.7px;
+  background: white;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 4.6rem;
+  top: 7rem;  
+
+}
+.circlewitharrow .arrow1::before{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  bottom: -1vw;
+  transform: rotate(-42deg);
+
+}
+
+.circlewitharrow .arrow1::after{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  top: -1vw;
+  transform: rotate(40deg);
+}
+
+
+
+.banner .banner-inner .content-inner span{
+  font-size: 5rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+.banner .banner-inner .content-inner .line span{
+margin-left: 40rem;
+left: 0;
+}
+
+
+/*-------------------- end section-1-------------------------*/
+
+
+
+
+
+
+/*----------------section2 about----------------*/
+.about{
+  height: 100vh;
+}
+.about .features-inner{
+  display: flex;
+}
+
+.about .features-inner .content span h1{
+
+  font-size: 5rem;
+  overflow: hidden;
+}
+
+.about .features-inner .content span{
+  font-size: 4.5rem;
+  line-height: 7rem;
+}
+
+
+/*----------------end section2 about----------------*/
+
+
+/*-------------------start section-3 aboutcon-----------------*/
+.aboutcon{
+  top: 4rem;
+  position: relative;
+  height: 100vh;
+}
+
+.aboutcon .h2con{
+  font-size: 4.5rem;
+  line-height: 7rem;
+}
+
+
+/*-------------------end section-3 aboutcon-----------------*/
+
+
+
+/*-------------------start section-4 aboutcon-----------------*/
+.ourproject1{
+  position: relative;
+  height: 100vh;
+}
+.ourproject1 .projectname{
+  display: flex;
+  font-size: 5rem;
+  font-weight: 800;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.ourproject1 .procon{
+  display: flex;
+  justify-content: space-around;
+}
+.ourproject1 .projectname .project1{
+}
+.project1{
+  min-height: 100vh;
+}
+.project1img{
+  width: 380px;
+  height: 520px;
+  background-color: pink;
+  background: url("../images/pf710-1.jpg");
+}
+
+.project2img{
+  width: 380px;
+  height: 520px;
+  background-color: pink;
+  /* background: url("../images/"); */
+}
+.project1heading{
+  margin-bottom: 0rem;
+}
+.project1heading h1{
+  margin: 0px;
+  padding: 0px;
+}
+.project1heading p{
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+
+}
+.circlepro3{
+  border-radius: 100%;
+
+/* Arrow 2 (Stroke) */
+
+
+position: absolute;
+width: 18vw;
+height: 18vw;
+right:55rem;
+top: 350px;
+left: 34rem;
+z-index: 1;
+border: 2px solid #FFFFFF;
+transform: rotate(30deg);
+}
+.circlewithdownarrow3{
+  position: relative;
+  width: 6vw;
+  height: 1.7px;
+  background: white;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 4.5rem;
+  top: 7rem; 
+}
+
+.circlewithdownarrow3::before{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  bottom: -1vw;
+  transform: rotate(-42deg);
+}
+.circlewithdownarrow3::after{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  top: -1vw;
+  transform: rotate(40deg);
+}
+/*-------------------end section-4 project1-----------------*/
+
+
+/*-------------------start section-5 project2-----------------*/
+.ourproject2{
+  position: relative;
+  min-height: 100vh;
+  top: 10rem;
+
+}
+.ourproject2 .features-inner{
+  display: flex;
+}
+.ourproject2 .features-inner .rectbox{
+  width: 380px;
+  height: 520px;
+  background-color: yellow;
+}
+.ourproject2 .features-inner .project4{
+  margin-left: 3rem;
+}
+.arrow44{
+   border-radius: 100%;
+
+/* Arrow 2 (Stroke) */
+
+
+position: absolute;
+width: 18vw;
+height: 18vw;
+right:10rem;
+top: 350px;
+z-index: 1;
+border: 2px solid #FFFFFF;
+transform: rotate(-30deg);
+}
+.circlewithdownarrow3-1{
+  position: relative;
+  width: 6vw;
+  height: 1.7px;
+  background: white;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 4.5rem;
+  top: 7rem; 
+}
+.circlewithdownarrow3-1::before{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  bottom: -1vw;
+  transform: rotate(-40deg);
+
+}
+
+.circlewithdownarrow3-1::after{
+  position: relative;
+
+  content: "";
+  display: block;
+  width: 3vmax;
+  height: 1.7px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  top: -1vw;
+  transform: rotate(40deg);
+
+}
+/*-------------------end section-5 project2-----------------*/
+
+
+/*--------------start sectioni-6 navigation--------------*/
+.navigation{
+  position: relative;
+  min-height: 100vh;
+  top: 10rem;
+}
+.nav ul li{
+  list-style: none;
+  cursor: pointer;
+
+}
+
+.nav ul li p{
+  font-size:6rem;
+  font-weight: 400;
+}
+.nav ul li:nth-child(1){
+  margin-left: 5rem;
+}
+.nav ul li:nth-child(1)::before{
+  content: "";
+  position: absolute;
+  margin: 5rem 0rem 0rem 0rem;
+  width: 20rem;
+  height: 5px;
+  background-color: #F02937
+  ;
+
+}
+
+.nav ul li:nth-child(2){
+  margin-left: 25rem;
+}
+.nav ul li:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  margin: 5rem 0rem 0rem 0rem;
+  width: 20rem;
+  height: 5px;
+  background-color: #F02937;
+  z-index: 1;
+
+}
+.nav ul li:nth-child(3){
+  margin-left: 35rem;
+}
+.nav ul li:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  margin: 5rem 0rem 0rem 0rem;
+  width: 20rem;
+  height: 5px;
+  background-color: #F02937;
+  z-index: 1;
+
+}
+.nav ul li:nth-child(4){
+  margin-left: 50rem;
+}
+.nav ul li:nth-child(4)::before{
+  content: "";
+  position: absolute;
+  margin: 5rem 0rem 0rem 0rem;
+  width: 35rem;
+  height: 5px;
+  background-color: #F02937;
+  z-index: 1;
+
+}
+.navigation .container .features-inner .redcircle1{
+  position: absolute;
+  width: 300px;
+  height:300px ;
+  border-radius: 100%;
+  background-color:red;
+  margin-left: 15rem;
+  top: 1rem;
+mix-blend-mode: difference;
+}
+
+.navigation .container .features-inner .redcircle2{
+  position: absolute;
+  width: 300px;
+  height:300px ;
+  border-radius: 100%;
+  background-color:red;
+  margin-left: 43rem;
+  top: 20rem;
+mix-blend-mode: difference;
+
+}
+/*--------------end sectioni-6 navigation--------------*/
+
+
+
+/*--------------start sectioni-7 contactus-------------*/
+.contactus{
+  position: relative;
+  min-height: 100vh;
+  margin-top: 10rem;
+}
+.contactus .row .features-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contactus .content{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+
+}
+.contactus .content p{
+  position: relative;
+  font-size: 6rem;
+  z-index: 4;
+  background-color: rgba(255, 0, 0, 0);
+  mix-blend-mode:difference;
+
+}
+.contactus .content p span{
+padding: 0;
+margin: 0;
+color: white;
+
+mix-blend-mode:overlay;
+background-color: rgba(255, 255, 255, 0);
+}
+
+.myimage{
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  right: 0rem;
+  top: 0;
+  background-image: url('../images/20200929130428_IMG_7665.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+  mix-blend-mode: difference;
+}
+.contactus .row .links{
+  width: 50%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  display: flex;
+}
+
+.contactus .row .links ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  cursor: pointer;
+
+}
+.redcirclemail{
+  position: absolute;
+  width: 150px;
+  height:150px ;
+  border-radius: 100%;
+  background-color:red;
+  margin-right: 52rem;
+  bottom: 12rem;
+  mix-blend-mode: difference;
+  z-index: 10;
+}
+/*--------------end sectioni-7 contactus-------------*/
+
+  @media all and (max-width: 480px){
+  .container{
+   width: 490px;    
+  }
+  .circlewitharrow{
+  display: none;
+  }
+  .contmain{
+  width: 90%;
+  } 
+
+
+}
+
+
+
+/* -------------cursor --------------- */
+/* 
+.cursor{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  content: layout style size;
+  pointer-events: none;
+  
+}
+.cursor:before{
+  content: "";
+  position: absolute;
+  top:-23px;
+  left:-24px;
+  display:block;
+  width: 49px;
+  height: 48px;
+  transform: scaleY(0.2);
+  background: black;
+  border-radius: 50%;
+  
+}
+
+.cursor .cursor-media{
+  display: block;
+  height: 350px;
+  width:350px;
+  overflow: hidden;
+  border-radius: 100%;
+  transform: scale(0);
+  margin: -175px 0 0 -175px;
+  position: relative;
+}
+
+.cursor .cursor-media img{
+  height: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+} */
